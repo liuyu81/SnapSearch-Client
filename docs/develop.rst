@@ -1,4 +1,5 @@
-.. SnapSearch-Client-Python
+.. snapsearch-client-python document
+   :noindex:
 
 ------------------
 Future Development
@@ -8,11 +9,11 @@ Overview
 ========
 
 .. image:: https://travis-ci.org/liuyu81/SnapSearch-Client-Python.png?branch=master
-   :target: https://travis-ci.org/liuyu81/SnapSearch-Client-Python
+   :target: https://travis-ci.org/liuyu81/SnapSearch-Client-python
    :alt: Build Status
 
-.. image:: https://pypip.in/license/SnapSearch-Client-Python/badge.png
-   :target: https://pypi.python.org/pypi/SnapSearch-Client-Python/
+.. image:: https://pypip.in/license/snapsearch-client-python/badge.png
+   :target: https://pypi.python.org/pypi/snapsearch-client-python/
    :alt: License
 
 Status:
@@ -36,20 +37,20 @@ Standards
 - :RFC:`3875` : CGI 1.1
 - :PEP:`3333` : WSGI 1.0.1
 
-Objects and Interfaces
+Packages and Modules
 ~~~~~~~~~~~~~~~~~~~~~~
 
 TODO
 
 
 Design Choices
-==============
+~~~~~~~~~~~~~~
 
 TODO
 
 
-Coding
-======
+Code Base
+=========
 
 Style Conventions
 ~~~~~~~~~~~~~~~~~
@@ -70,8 +71,11 @@ String Literals:
   - docstring: ``"""doc"""``
 
 
+Test Suite
+==========
+
 Style Checking
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 Run the ``pep8`` tool to enforce style checking against :PEP:`8`.
 
@@ -80,9 +84,6 @@ Run the ``pep8`` tool to enforce style checking against :PEP:`8`.
     $ pip install pep8
     $ pep8 . --verbose
 
-
-Testing
-=======
 
 Unit Test
 ~~~~~~~~~
@@ -138,12 +139,6 @@ http://docs.travis-ci.com/user/encryption-keys/
 
 Profiling
 ~~~~~~~~~
-
-TODO
-
-
-Documentation
-=============
 
 TODO
 
