@@ -15,6 +15,7 @@
 """
 
 __all__ = ['SNAPSEARCH_API_URL',
+           'SNAPSEARCH_API_USER_AGENT',
            'SNAPSEARCH_API_HTTP_LIBRARY',
            'SNAPSEARCH_API_ACCEPT_ENCODING',
            'SNAPSEARCH_API_FOLLOW_REDIRECT',
@@ -34,6 +35,7 @@ import sys
 # snapsearch api parameters (can be changed by users)
 
 SNAPSEARCH_API_URL = "https://snapsearch.io/api/v1/robot"
+SNAPSEARCH_API_USER_AGENT = "snapsearch-client/python"
 SNAPSEARCH_API_FOLLOW_REDIRECT = False
 SNAPSEARCH_API_TIMEOUT = 30
 
