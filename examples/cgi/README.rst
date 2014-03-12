@@ -13,7 +13,7 @@ Controller for easy integration with existing Python CGI scripts. Note that,
 this article focuses on how to glue a *Python* CGI script with the `Pythonic
 SnapSearch Client`_. For intercepting `CGI`_ programs written in a different
 programming language, please refer to other variations of `SnapSearch Client
-<https://github.com/SnapSearch/SnapSearch-Client/>`_.
+<https://github.com/SnapSearch/SnapSearch-Clients>`_.
 
 .. _`Pythonic SnapSearch Client`: https://github.com/liuyu81/
     SnapSearch-Client-Python/
