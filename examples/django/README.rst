@@ -7,7 +7,7 @@ Integration with WSGI Applications
 Overview
 --------
 
-The `Pythnoic SnapSearch Client`__ comes with a `WSGI`_-compliant Interceptor
+The `Pythonic SnapSearch Client`__ comes with a `WSGI`_-compliant Interceptor
 Middleware for easy integration with existing web applications. The solution is
 framework agnostic, and supports any `WSGI`_-compliant web applications, either
 hand-made, or built upon `WSGI`_ framewrorks (such as Django_, Falcon_, Flask_,
