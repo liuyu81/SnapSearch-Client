@@ -24,6 +24,10 @@ web2py_, etc.).
 Flask App
 ---------
 
+Flask_ is a `WSGI`_ compliant microframework for web applications. The following
+Python script serves a simple ``"Hello World"`` page through any of the public
+IP address(es) of the runner machine.
+
 .. code:: python
 
     from flask import Flask
@@ -87,4 +91,37 @@ Integration
 Verfication
 -----------
 
-TODO
+1. server starts the web application.
+
+.. code-block:: bash
+
+    $ pip install Flask
+    $ pip install snapsearch-client-python
+    $ python main.py
+     * Running on http://0.0.0.0:5000/
+
+2. search engine robot visits (emulated with ``curl``).
+
+.. code-block:: bash
+
+    $ curl -i -A "Googlebot" http://<server ip>:5000/
+
+3. server log shows both the robot and SnapSearch backend service.
+
+.. code-block::
+
+     * Running on http://0.0.0.0:5000/
+    <robot ip> - - [13/Mar/2014 00:42:59] "GET / HTTP/1.1" 200 -
+    <SnapSearch ip> - - [13/Mar/2014 00:46:21] "GET / HTTP/1.1" 200 -
+
+4. robot receives an *intercepted* HTTP response like,
+
+.. code-block::
+
+    HTTP/1.0 200 OK
+    server: Werkzeug/0.9.4 Python/2.6.6
+    Connection: close
+    Date: Wed, 12 Mar 2014 16:48:25 GMT
+
+    <html><head><style type="text/css">body { background: #fff }</style></head><body>Hello World!
+    </body></html>

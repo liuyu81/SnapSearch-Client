@@ -12,8 +12,10 @@
     :date: 2014/03/08
 """
 
-__all__ = ['Response', ]
+__all__ = ['Response', 'message_extractor', ]
 
+
+import functools
 
 from .._compat import u, HTTP_STATUS_CODES
 
@@ -55,6 +57,15 @@ def _extract_message(response_body):
     headers.append((b"content-length", bytes(len(payload))))
 
     return {'status': status, 'headers': headers, 'html': payload}
+
+
+def message_extractor(func):
+    """
+    Decorator for all extractor functions taking a response body as input.
+    """
+    def wrapper(response_body):
+        return func(_extract_message(response_body))
+    return functools.update_wrapper(wrapper, func)
 
 
 class Response(object):

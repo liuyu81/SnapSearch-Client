@@ -32,10 +32,13 @@ import os
 import os.path
 import sys
 
+from .. import __version__ as __client_version__
+
 # snapsearch api parameters (can be changed by users)
 
 SNAPSEARCH_API_URL = "https://snapsearch.io/api/v1/robot"
-SNAPSEARCH_API_USER_AGENT = "snapsearch-client/python"
+SNAPSEARCH_API_USER_AGENT = "snapsearch-client " \
+                            "(python/{0}.{1}.{2})".format(*__client_version__)
 SNAPSEARCH_API_FOLLOW_REDIRECT = False
 SNAPSEARCH_API_TIMEOUT = 30
 
