@@ -88,7 +88,7 @@ Integration
         app.run(host="0.0.0.0", port=5000)
 
 
-Verfication
+Verification
 -----------
 
 1. server starts the web application.
