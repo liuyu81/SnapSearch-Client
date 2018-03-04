@@ -11,11 +11,11 @@ SnapSearch Client Python
 .. image:: http://badge.fury.io/py/snapsearch-client-python.png
    :target: http://badge.fury.io/py/snapsearch-client-python
 
-.. image:: https://pypip.in/d/snapsearch-client-python/badge.png
+.. image:: https://img.shields.io/pypi/dm/snapsearch-client-python.svg
    :target: https://crate.io/packages/snapsearch-client-python/
    :alt: Downloads
 
-.. image:: https://pypip.in/license/snapsearch-client-python/badge.png
+.. image:: https://img.shields.io/pypi/l/snapsearch-client-python.svg
    :target: https://pypi.python.org/pypi/snapsearch-client-python/
    :alt: License
 
